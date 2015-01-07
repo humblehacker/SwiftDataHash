@@ -10,6 +10,8 @@
 		1F590A041A5CA7D0002051D7 /* SwiftDataHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F590A031A5CA7D0002051D7 /* SwiftDataHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F590A0A1A5CA7D0002051D7 /* SwiftDataHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5909FE1A5CA7D0002051D7 /* SwiftDataHash.framework */; };
 		1F590A111A5CA7D0002051D7 /* SwiftDataHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F590A101A5CA7D0002051D7 /* SwiftDataHashTests.swift */; };
+		1F590A1B1A5CA82D002051D7 /* SwiftDataHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F590A1A1A5CA82D002051D7 /* SwiftDataHash.m */; };
+		1F590A1D1A5CAD23002051D7 /* SwiftDataHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F590A1C1A5CAD23002051D7 /* SwiftDataHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		1F590A091A5CA7D0002051D7 /* SwiftDataHashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataHashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F590A0F1A5CA7D0002051D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F590A101A5CA7D0002051D7 /* SwiftDataHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataHashTests.swift; sourceTree = "<group>"; };
+		1F590A1A1A5CA82D002051D7 /* SwiftDataHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftDataHash.m; sourceTree = "<group>"; };
+		1F590A1C1A5CAD23002051D7 /* SwiftDataHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataHash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,18 +75,12 @@
 		1F590A001A5CA7D0002051D7 /* SwiftDataHash */ = {
 			isa = PBXGroup;
 			children = (
+				1F590A1C1A5CAD23002051D7 /* SwiftDataHash.swift */,
 				1F590A031A5CA7D0002051D7 /* SwiftDataHash.h */,
-				1F590A011A5CA7D0002051D7 /* Supporting Files */,
-			);
-			path = SwiftDataHash;
-			sourceTree = "<group>";
-		};
-		1F590A011A5CA7D0002051D7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
+				1F590A1A1A5CA82D002051D7 /* SwiftDataHash.m */,
 				1F590A021A5CA7D0002051D7 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = SwiftDataHash;
 			sourceTree = "<group>";
 		};
 		1F590A0D1A5CA7D0002051D7 /* SwiftDataHashTests */ = {
@@ -92,7 +90,7 @@
 				1F590A0E1A5CA7D0002051D7 /* Supporting Files */,
 			);
 			path = SwiftDataHashTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		1F590A0E1A5CA7D0002051D7 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -209,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F590A1B1A5CA82D002051D7 /* SwiftDataHash.m in Sources */,
+				1F590A1D1A5CAD23002051D7 /* SwiftDataHash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +315,7 @@
 		1F590A151A5CA7D0002051D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -326,12 +327,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1F590A161A5CA7D0002051D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

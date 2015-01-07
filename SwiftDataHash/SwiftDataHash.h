@@ -8,12 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
-//! Project version number for SwiftDataHash.
+typedef NS_ENUM(NSInteger, CCHashAlgorithm) {
+    CCHashAlgorithmMD5,
+    CCHashAlgorithmSHA1,
+    CCHashAlgorithmSHA224,
+    CCHashAlgorithmSHA256,
+    CCHashAlgorithmSHA384,
+    CCHashAlgorithmSHA512
+};
+
+extern NSInteger CCHashLengthOfDigest(CCHashAlgorithm algorithm);
+extern NSData *CCHashPerform(CCHashAlgorithm algorithm, NSData *input);
+extern NSData *CCHashPerformHMAC(CCHashAlgorithm algorithm, NSData *input, NSData *key);
+
+// The rest of this file is boilerplate stuff that has to be here.
 FOUNDATION_EXPORT double SwiftDataHashVersionNumber;
-
-//! Project version string for SwiftDataHash.
 FOUNDATION_EXPORT const unsigned char SwiftDataHashVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SwiftDataHash/PublicHeader.h>
-
-
