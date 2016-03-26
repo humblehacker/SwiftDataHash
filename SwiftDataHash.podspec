@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftDataHash"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Swift wrapper around CommonCrypto hash functions"
 
   s.description  = <<-DESC
@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/PodBuilder/SwiftDataHash"
-  s.platform     = :osx, '10.10'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
 
   s.license      = "MIT"
   s.author       = "William Kent"

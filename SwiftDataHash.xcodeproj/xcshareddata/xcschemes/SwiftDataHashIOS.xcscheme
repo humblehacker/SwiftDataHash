@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F5909FD1A5CA7D0002051D7"
-               BuildableName = "SwiftDataHash.framework"
-               BlueprintName = "SwiftDataHash"
-               ReferencedContainer = "container:SwiftDataHash.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F590A081A5CA7D0002051D7"
-               BuildableName = "SwiftDataHashTests.xctest"
-               BlueprintName = "SwiftDataHashTests"
+               BlueprintIdentifier = "631665A51CA7538A00D5E00E"
+               BuildableName = "SwiftDataHashIOS.framework"
+               BlueprintName = "SwiftDataHashIOS"
                ReferencedContainer = "container:SwiftDataHash.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F590A081A5CA7D0002051D7"
-               BuildableName = "SwiftDataHashTests.xctest"
-               BlueprintName = "SwiftDataHashTests"
+               BlueprintIdentifier = "6335159C1CA758B3001CA71E"
+               BuildableName = "SwiftDataHashIOSTests.xctest"
+               BlueprintName = "SwiftDataHashIOSTests"
                ReferencedContainer = "container:SwiftDataHash.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F5909FD1A5CA7D0002051D7"
-            BuildableName = "SwiftDataHash.framework"
-            BlueprintName = "SwiftDataHash"
+            BlueprintIdentifier = "631665A51CA7538A00D5E00E"
+            BuildableName = "SwiftDataHashIOS.framework"
+            BlueprintName = "SwiftDataHashIOS"
             ReferencedContainer = "container:SwiftDataHash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F5909FD1A5CA7D0002051D7"
-            BuildableName = "SwiftDataHash.framework"
-            BlueprintName = "SwiftDataHash"
+            BlueprintIdentifier = "631665A51CA7538A00D5E00E"
+            BuildableName = "SwiftDataHashIOS.framework"
+            BlueprintName = "SwiftDataHashIOS"
             ReferencedContainer = "container:SwiftDataHash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F5909FD1A5CA7D0002051D7"
-            BuildableName = "SwiftDataHash.framework"
-            BlueprintName = "SwiftDataHash"
+            BlueprintIdentifier = "631665A51CA7538A00D5E00E"
+            BuildableName = "SwiftDataHashIOS.framework"
+            BlueprintName = "SwiftDataHashIOS"
             ReferencedContainer = "container:SwiftDataHash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

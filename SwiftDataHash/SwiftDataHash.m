@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 William Kent. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonCrypto.h>
 #import "SwiftDataHash.h"
 

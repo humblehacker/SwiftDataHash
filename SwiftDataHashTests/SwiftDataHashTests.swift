@@ -23,7 +23,7 @@ class SwiftDataHashTests: XCTestCase {
             hexstr.appendFormat("%02x", bytes[i])
         }
         
-        return hexstr
+        return hexstr as String
     }
     
     override func setUp() {
